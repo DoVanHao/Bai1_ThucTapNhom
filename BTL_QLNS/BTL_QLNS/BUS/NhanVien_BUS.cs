@@ -81,5 +81,33 @@ namespace BTL_QLNS.BUS
             tenda = dt.ExcuteScalar(sql);
             return tenda;
         }
+		        public void updatePB(String maPB, String tenPB, int sonv, String mota)
+        {
+            String sql = "UPDATE PHONGBAN set name_PB=N'" + tenPB + "',sonv_Pb='" + sonv + "',mota_Pb=N'" + mota + "' where id_Pb='" + maPB + "'";
+            try
+            {
+                dt.ExcuteNonQuery(sql);
+                MessageBox.Show("Sửa thành công !");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Sửa thất bại !");
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void deletePB(String maPB)
+        {
+            String sql = "delete PHONGBAN where id_Pb='" + maPB + "'";
+            try
+            {
+                dt.ExcuteNonQuery(sql);
+                MessageBox.Show("Xóa thành công !");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Lỗi CSDL !" + ex.Message);
+
+            }
+        }
     }
 }
