@@ -24,5 +24,6 @@ namespace BTL_QLNS.BUS
             String sql = "insert into DANGNHAP values('" + username + "','" + pass + "','" + manv + "')";
             da.ExcuteNonQuery(sql);
         }
+
     }
 }

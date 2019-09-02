@@ -46,20 +46,7 @@ namespace BTL_QLNS.BUS
                 MessageBox.Show(ex.Message);
             }
         }
-        public void deleteNV(String manv)
-        {
-            String sql = "delete Nhanvien where id_Nv='" + manv + "'";
-            try
-            {
-                dt.ExcuteNonQuery(sql);
-                MessageBox.Show("Xóa thành công !");
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show("Lỗi CSDL !" + ex.Message);
-
-            }
-        }
+       
         public DataTable Search(String condi)
         {
             DataTable da = null;
