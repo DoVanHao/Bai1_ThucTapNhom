@@ -15,6 +15,16 @@ namespace BTL_QLNS
         {
             InitializeComponent();
         }
+        private void frm_Closed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+        }
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            Quanlynhanvien frmnv = new Quanlynhanvien();
+            frmnv.Show();
+            this.Hide();
+        }
 
     }
 }
