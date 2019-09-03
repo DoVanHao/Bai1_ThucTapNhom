@@ -24,6 +24,12 @@ namespace BTL_QLNS.BUS
             String sql = "insert into DANGNHAP values('" + username + "','" + pass + "','" + manv + "')";
             da.ExcuteNonQuery(sql);
         }
-
+        public DataTable Search(String condi)
+        {
+            DataTable da = null;
+            String sql = "Select * from PHONGBAN where id_Pb like N'%" + condi + "%' OR name_PB like N'%" + condi + "%'";
+            da = dt.getTable(sql);
+            return da;
+        }
     }
 }

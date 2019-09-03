@@ -18,6 +18,13 @@ namespace BTL_QLNS.BUS
             da = dt.getTable(sql);
             return da;
         }
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            ManHinhChinh frmmch = new ManHinhChinh();
+            frmmch.Show();
+            this.Hide();
+        }
+
         public void insertNV(String manv, String tennv, String ngaysinh, String diachi, int luong, String mapb, String mada)
         {
             String sql = " insert into NHANVIEN values('" + manv + "',N'" + tennv + "','" + ngaysinh + "',N'" + diachi + "','" + luong + "',N'" + mapb + "',N'" + mada + "')";
