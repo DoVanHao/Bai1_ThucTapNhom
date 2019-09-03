@@ -26,30 +26,6 @@ namespace BTL_QLNS.DAL
             conn.Close();
             return dt;
         }
-        public void ExcuteNonQuery(String sql)
-        {
-            SqlConnection conn = getConnect();
-            if (conn.State == ConnectionState.Closed)
-            {
-                conn.Open();
-            }
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            cmd.ExecuteNonQuery();
-            cmd.Dispose();
-            cmd.Clone();
-            conn.Close();
-        }
-        public String ExcuteScalar(String sql)
-        {
-            SqlConnection conn = getConnect();
-            if (conn.State == ConnectionState.Closed)
-            {
-                conn.Open();
-            }
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            String kq=cmd.ExecuteScalar().ToString();
-            conn.Close();
-            return kq;
-        }
+
     }
 }
