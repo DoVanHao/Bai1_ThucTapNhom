@@ -47,12 +47,9 @@ namespace BTL_QLNS.BUS
                 MessageBox.Show(ex.Message);
             }
         }
-        public DataTable Search(String condi)
+        public String selectPB(String mapb)
         {
-            DataTable da = null;
-            String sql = "Select * from PHONGBAN where id_Pb like N'%" + condi + "%' OR name_PB like N'%" + condi + "%'";
-            da = dt.getTable(sql);
-            return da;
         }
+
     }
 }

@@ -61,13 +61,7 @@ namespace BTL_QLNS.BUS
             da = dt.getTable(sql);
             return da;
         }
-        public String selectPB(String mapb)
-        {
-            String tenpb;
-            String sql = "select name_Pb from PHONGBAN where id_Pb='" + mapb + "'";
-            tenpb = dt.ExcuteScalar(sql);
-            return tenpb;
-        }
+      
         public String selectDA(String mada)
         {
             String tenda;
