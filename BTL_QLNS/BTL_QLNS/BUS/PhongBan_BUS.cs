@@ -47,8 +47,12 @@ namespace BTL_QLNS.BUS
                 MessageBox.Show(ex.Message);
             }
         }
-        public String selectPB(String mapb)
+        public DataTable Search(String condi)
         {
+            DataTable da = null;
+            String sql = "Select * from DUAN where id_DA like N'%" + condi + "%' OR name_DA like N'%" + condi + "%'";
+            da = dt.getTable(sql);
+            return da;
         }
 
     }
