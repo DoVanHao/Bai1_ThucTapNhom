@@ -69,4 +69,20 @@ namespace BTL_QLNS.BUS
             return da;
         }
     }
+
+        public void deletePB(String maPB)
+        {
+            String sql = "delete PHONGBAN where id_Pb='" + maPB + "'";
+            try
+            {
+                dt.ExcuteNonQuery(sql);
+                MessageBox.Show("Xóa thành công !");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Lỗi CSDL !" + ex.Message);
+
+            }
+        }
+
 }
