@@ -95,5 +95,30 @@ namespace BTL_QLNS
                 txtMotaDA.Text = dgvDuAn.Rows[index].Cells[3].Value.ToString();
             }
         }
+		
+		
+		// rieng
+		private void btnXoa_Click_1(object sender, EventArgs e)
+        {
+            dab.deleteDA(txtMaDA.Text);
+            Quanlyduan_Load(sender, e);
+        }
+
+        private void Quanlyduan_Load_1(object sender, EventArgs e)
+        {
+            dgvDuAn.DataSource = dab.getDUAN();
+        }
+
+        private void dgvDuAn_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = e.RowIndex;
+            if (index >= 0)
+            {
+                txtMaDA.Text = dgvDuAn.Rows[index].Cells[0].Value.ToString();
+                txtTenDA.Text = dgvDuAn.Rows[index].Cells[1].Value.ToString();
+                txtSoNVDA.Text = dgvDuAn.Rows[index].Cells[2].Value.ToString();
+                txtMotaDA.Text = dgvDuAn.Rows[index].Cells[3].Value.ToString();
+            }
+        }
     }
 }
