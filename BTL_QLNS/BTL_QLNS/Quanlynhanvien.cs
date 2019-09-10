@@ -158,5 +158,69 @@ namespace BTL_QLNS
         {
             ExportExcel(dgvNhanVien, @"D:\", "xuatfileExcel");
         }
+		
+		// rieng
+		NhanVien_BUS nvb = new NhanVien_BUS();
+        private void Quanlynhanvien_Load_1(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'quanlynhasu_3FDataSet1.DUAN' table. You can move, or remove it, as needed.
+            this.dUANTableAdapter.Fill(this.quanlynhasu_3FDataSet1.DUAN);
+            // TODO: This line of code loads data into the 'quanlynhasu_3FDataSet.PHONGBAN' table. You can move, or remove it, as needed.
+            this.pHONGBANTableAdapter.Fill(this.quanlynhasu_3FDataSet.PHONGBAN);
+            dgvNhanVien.DataSource = nvb.getNhanvien();
+        }
+
+        private void btnExit_Click_2(object sender, EventArgs e)
+        {
+            ManHinhChinh frmmch = new ManHinhChinh();
+            frmmch.Show();
+            this.Hide();
+        }
+
+        private void btnThem_Click_2(object sender, EventArgs e)
+        {
+            int luongnv=0 ;
+            try
+            {
+                luongnv = int.Parse(txtLuong.Text);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Kiểu dữ liệu của lương phải là kiểu số !");
+            }
+            if (txtMaNv.Text.Trim() == "")
+                MessageBox.Show("Mã nhân viên không được để trống !");
+            else if (txtTenNv.Text.Trim() == "")
+                MessageBox.Show("Tên nhân viên không được để trống !");
+            else if (luongnv == 0)
+                MessageBox.Show("Thêm thất bại !");
+            else
+                nvb.insertNV(txtMaNv.Text, txtTenNv.Text, dtpNgaysinh.Value.ToString("dd/MM/yyyy"), txtDiachi.Text, luongnv, cbxPhongban.SelectedValue.ToString(), cbxDuan.SelectedValue.ToString());
+            Quanlynhanvien_Load(sender, e);
+
+        }
+
+        private void btnSua_Click_2(object sender, EventArgs e)
+        {
+            int luongnv = 0;
+            try
+            {
+                luongnv = int.Parse(txtLuong.Text);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Kiểu dữ liệu của lương phải là kiểu số !");
+            }
+            if (txtMaNv.Text.Trim() == "")
+                MessageBox.Show("Mã nhân viên không được để trống !");
+            else if (txtTenNv.Text.Trim() == "")
+                MessageBox.Show("Tên nhân viên không được để trống !");
+            else if (luongnv == 0)
+                MessageBox.Show("Sửa thất bại !");
+            else
+                nvb.updateNV(txtMaNv.Text, txtTenNv.Text, dtpNgaysinh.Value.ToString("dd/MM/yyyy"), txtDiachi.Text, luongnv, cbxPhongban.SelectedValue.ToString(), cbxDuan.SelectedValue.ToString());
+            Quanlynhanvien_Load(sender, e);
+        }
+		
     }
 }
