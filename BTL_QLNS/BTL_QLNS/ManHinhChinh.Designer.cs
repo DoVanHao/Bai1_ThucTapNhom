@@ -28,17 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManHinhChinh));
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.btnPhongBan = new System.Windows.Forms.Button();
             this.btnDuan = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.lblLicense = new System.Windows.Forms.Label();
+            this.PH = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnNhanVien
             // 
             this.btnNhanVien.ForeColor = System.Drawing.Color.Red;
-            this.btnNhanVien.Location = new System.Drawing.Point(54, 232);
+            this.btnNhanVien.Location = new System.Drawing.Point(71, 232);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Size = new System.Drawing.Size(212, 56);
             this.btnNhanVien.TabIndex = 0;
@@ -49,7 +51,7 @@
             // btnPhongBan
             // 
             this.btnPhongBan.ForeColor = System.Drawing.Color.Red;
-            this.btnPhongBan.Location = new System.Drawing.Point(284, 232);
+            this.btnPhongBan.Location = new System.Drawing.Point(325, 232);
             this.btnPhongBan.Name = "btnPhongBan";
             this.btnPhongBan.Size = new System.Drawing.Size(212, 56);
             this.btnPhongBan.TabIndex = 1;
@@ -59,7 +61,7 @@
             // btnDuan
             // 
             this.btnDuan.ForeColor = System.Drawing.Color.Red;
-            this.btnDuan.Location = new System.Drawing.Point(519, 232);
+            this.btnDuan.Location = new System.Drawing.Point(599, 232);
             this.btnDuan.Name = "btnDuan";
             this.btnDuan.Size = new System.Drawing.Size(212, 56);
             this.btnDuan.TabIndex = 2;
@@ -69,36 +71,45 @@
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnExit.Image = global::BTL_QLNS.Properties.Resources.iconfinder_Undo_278852;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.Location = new System.Drawing.Point(1, 3);
+            this.btnExit.Location = new System.Drawing.Point(799, 12);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(78, 32);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Trở lại";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.UseVisualStyleBackColor = true;
-      
             // 
-            // lblLicense
+            // PH
             // 
-            this.lblLicense.AutoSize = true;
-            this.lblLicense.BackColor = System.Drawing.Color.Transparent;
-            this.lblLicense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblLicense.ForeColor = System.Drawing.Color.White;
-            this.lblLicense.Location = new System.Drawing.Point(670, 430);
-            this.lblLicense.Name = "lblLicense";
-            this.lblLicense.Size = new System.Drawing.Size(102, 13);
-            this.lblLicense.TabIndex = 6;
-            this.lblLicense.Text = "Nam Dong products";
+            this.PH.AutoSize = true;
+            this.PH.BackColor = System.Drawing.Color.Transparent;
+            this.PH.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.PH.ForeColor = System.Drawing.Color.Black;
+            this.PH.Location = new System.Drawing.Point(172, 108);
+            this.PH.Name = "PH";
+            this.PH.Size = new System.Drawing.Size(540, 52);
+            this.PH.TabIndex = 6;
+            this.PH.Text = "Phần mềm quản lí nhân sự";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(645, 488);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(232, 31);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "MTA SOFTWARE";
             // 
             // ManHinhChinh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BTL_QLNS.Properties.Resources.Nen_BTL;
-            this.ClientSize = new System.Drawing.Size(784, 452);
-            this.Controls.Add(this.lblLicense);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(889, 528);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.PH);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDuan);
             this.Controls.Add(this.btnPhongBan);
@@ -120,6 +131,7 @@
         private System.Windows.Forms.Button btnPhongBan;
         private System.Windows.Forms.Button btnDuan;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Label lblLicense;
+        private System.Windows.Forms.Label PH;
+        private System.Windows.Forms.Label label1;
     }
 }
