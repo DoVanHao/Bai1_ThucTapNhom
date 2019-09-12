@@ -55,7 +55,6 @@
             this.btnPhongBan.TabIndex = 1;
             this.btnPhongBan.Text = "Quản lý phòng ban";
             this.btnPhongBan.UseVisualStyleBackColor = true;
-            this.btnPhongBan.Click += new System.EventHandler(this.btnPhongBan_Click);
             // 
             // btnDuan
             // 
