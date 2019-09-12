@@ -65,7 +65,6 @@
             this.btnDuan.TabIndex = 2;
             this.btnDuan.Text = "Quản lý dự án";
             this.btnDuan.UseVisualStyleBackColor = true;
-            this.btnDuan.Click += new System.EventHandler(this.btnDuan_Click);
             // 
             // btnExit
             // 
@@ -79,7 +78,7 @@
             this.btnExit.Text = "Trở lại";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+      
             // 
             // lblLicense
             // 
