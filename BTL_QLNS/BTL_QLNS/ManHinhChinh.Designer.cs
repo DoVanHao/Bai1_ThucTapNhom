@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManHinhChinh));
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.btnPhongBan = new System.Windows.Forms.Button();
             this.btnDuan = new System.Windows.Forms.Button();
@@ -42,7 +41,7 @@
             this.btnNhanVien.ForeColor = System.Drawing.Color.Red;
             this.btnNhanVien.Location = new System.Drawing.Point(71, 232);
             this.btnNhanVien.Name = "btnNhanVien";
-            this.btnNhanVien.Size = new System.Drawing.Size(212, 56);
+            this.btnNhanVien.Size = new System.Drawing.Size(205, 56);
             this.btnNhanVien.TabIndex = 0;
             this.btnNhanVien.Text = "Quản lý nhân viên";
             this.btnNhanVien.UseVisualStyleBackColor = true;
@@ -53,7 +52,7 @@
             this.btnPhongBan.ForeColor = System.Drawing.Color.Red;
             this.btnPhongBan.Location = new System.Drawing.Point(325, 232);
             this.btnPhongBan.Name = "btnPhongBan";
-            this.btnPhongBan.Size = new System.Drawing.Size(212, 56);
+            this.btnPhongBan.Size = new System.Drawing.Size(208, 56);
             this.btnPhongBan.TabIndex = 1;
             this.btnPhongBan.Text = "Quản lý phòng ban";
             this.btnPhongBan.UseVisualStyleBackColor = true;
@@ -63,7 +62,7 @@
             this.btnDuan.ForeColor = System.Drawing.Color.Red;
             this.btnDuan.Location = new System.Drawing.Point(599, 232);
             this.btnDuan.Name = "btnDuan";
-            this.btnDuan.Size = new System.Drawing.Size(212, 56);
+            this.btnDuan.Size = new System.Drawing.Size(205, 56);
             this.btnDuan.TabIndex = 2;
             this.btnDuan.Text = "Quản lý dự án";
             this.btnDuan.UseVisualStyleBackColor = true;
@@ -72,7 +71,7 @@
             // 
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.Location = new System.Drawing.Point(799, 12);
+            this.btnExit.Location = new System.Drawing.Point(785, 29);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(78, 32);
             this.btnExit.TabIndex = 5;
@@ -88,7 +87,7 @@
             this.PH.ForeColor = System.Drawing.Color.Black;
             this.PH.Location = new System.Drawing.Point(172, 108);
             this.PH.Name = "PH";
-            this.PH.Size = new System.Drawing.Size(540, 52);
+            this.PH.Size = new System.Drawing.Size(426, 39);
             this.PH.TabIndex = 6;
             this.PH.Text = "Phần mềm quản lí nhân sự";
             // 
@@ -98,15 +97,14 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(645, 488);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 31);
+            this.label1.Size = new System.Drawing.Size(182, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "MTA SOFTWARE";
             // 
             // ManHinhChinh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(889, 528);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PH);

@@ -140,7 +140,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(103, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(572, 244);
+            this.panel2.Size = new System.Drawing.Size(602, 244);
             this.panel2.TabIndex = 1;
             // 
             // panel5
@@ -160,7 +160,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(572, 244);
+            this.panel5.Size = new System.Drawing.Size(602, 244);
             this.panel5.TabIndex = 10;
             // 
             // panel6
@@ -180,7 +180,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(572, 244);
+            this.panel6.Size = new System.Drawing.Size(602, 244);
             this.panel6.TabIndex = 11;
             // 
             // panel7
@@ -202,7 +202,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(572, 244);
+            this.panel7.Size = new System.Drawing.Size(602, 244);
             this.panel7.TabIndex = 0;
             // 
             // btnXoa
@@ -304,40 +304,40 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label17.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label17.Location = new System.Drawing.Point(69, 137);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(57, 18);
+            this.label17.Size = new System.Drawing.Size(58, 17);
             this.label17.TabIndex = 4;
             this.label17.Text = "Tên PB";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label18.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label18.Location = new System.Drawing.Point(69, 73);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(53, 18);
+            this.label18.Size = new System.Drawing.Size(54, 17);
             this.label18.TabIndex = 2;
             this.label18.Text = "Mã PB";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label19.Location = new System.Drawing.Point(307, 137);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(46, 18);
+            this.label19.Size = new System.Drawing.Size(47, 17);
             this.label19.TabIndex = 10;
             this.label19.Text = "Mô tả";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label20.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label20.Location = new System.Drawing.Point(307, 76);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(51, 18);
+            this.label20.Size = new System.Drawing.Size(49, 17);
             this.label20.TabIndex = 8;
             this.label20.Text = "Số NV";
             // 
@@ -615,7 +615,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(103, 253);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(572, 155);
+            this.panel3.Size = new System.Drawing.Size(602, 155);
             this.panel3.TabIndex = 2;
             // 
             // dgvPhongban
@@ -629,7 +629,7 @@
             this.dgvPhongban.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPhongban.Location = new System.Drawing.Point(0, 0);
             this.dgvPhongban.Name = "dgvPhongban";
-            this.dgvPhongban.Size = new System.Drawing.Size(572, 155);
+            this.dgvPhongban.Size = new System.Drawing.Size(602, 155);
             this.dgvPhongban.TabIndex = 0;
             this.dgvPhongban.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPhongban_CellClick);
             // 
@@ -666,7 +666,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(103, 414);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(572, 44);
+            this.panel4.Size = new System.Drawing.Size(602, 44);
             this.panel4.TabIndex = 3;
             // 
             // lblLicense
@@ -719,14 +719,14 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 250F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(778, 461);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(808, 461);
             this.tableLayoutPanel1.TabIndex = 9;
             // 
             // Quanlyphongban
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(778, 461);
+            this.ClientSize = new System.Drawing.Size(808, 461);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);

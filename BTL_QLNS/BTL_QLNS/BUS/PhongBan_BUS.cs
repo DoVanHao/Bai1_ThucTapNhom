@@ -56,6 +56,13 @@ namespace BTL_QLNS.BUS
         public DataTable Search(String condi)
         {
             DataTable da = null;
+            String sql = "Select * from PHONGBAN where id_Pb like N'%" + condi + "%' OR name_PB like N'%" + condi + "%'";
+            da = dt.getTable(sql);
+            return da;
+        }
+        public DataTable Search(String condi)
+        {
+            DataTable da = null;
             String sql = "Select * from PHONGBAN where id_Pb like N'    %" + condi + "%' OR name_PB like N'%" + condi + "%'";
             da = dt.getTable(sql);
             return da;
