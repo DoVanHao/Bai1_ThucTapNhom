@@ -11,7 +11,6 @@ namespace BTL_QLNS
 {
     public partial class Quanlyphongban : Form
     {
-    //Quan li phong ban
         public Quanlyphongban()
         {
             InitializeComponent();
@@ -26,7 +25,9 @@ namespace BTL_QLNS
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            anHinhChinh frch = new ManHinhChinh();
+            frch.Show(dt);
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,7 +42,7 @@ namespace BTL_QLNS
             dgvPhongban.DataSource = pbb.Search(txtSearch.Text);
 
         }
-        //button sua
+
         private void btnthem_Click(object sender, EventArgs e)
         {
             int sonv=0;
@@ -53,7 +54,7 @@ namespace BTL_QLNS
                 pbb.insertPB(txtMaPB.Text,txtTenPB.Text,sonv,txtMota.Text);
             Quanlyphongban_Load(sender, e);
         }
-        //button sua
+
         private void btnSua_Click(object sender, EventArgs e)
         {
             if (txtMaPB.Text.Trim() == "")
@@ -74,96 +75,24 @@ namespace BTL_QLNS
             Quanlyphongban_Load(sender, e);
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            pbb.deletePB(txtMaPB.Text);
-            Quanlyphongban_Load(sender, e);
-        }
-
+       
         private void dgvPhongban_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int index = e.RowIndex;
             if (index >= 0)
             {
-
                 txtMaPB.Text = dgvPhongban.Rows[index].Cells[0].Value.ToString();
                 txtTenPB.Text = dgvPhongban.Rows[index].Cells[1].Value.ToString();
                 txtSoNV.Text = dgvPhongban.Rows[index].Cells[2].Value.ToString();
                 txtMota.Text = dgvPhongban.Rows[index].Cells[3].Value.ToString();
             }
         }
-
-        public void deletePB(String maPB)
+        private void btnExit_Click_1(object sender, EventArgs e)
         {
-            String sql = "delete PHONGBAN where id_Pb='" + maPB + "'";
-            try
-            {
-                dt.ExcuteNonQuery(sql);
-                MessageBox.Show("Xóa thành công !");
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show("Lỗi CSDL !" + ex.Message);
-
-            }
+            ManHinhChinh frmmch = new ManHinhChinh();
+            frmmch.Show();
+            this.Hide();
         }
-
-        private void Quanlyphongban_Load(object sender, EventArgs e)
-        {
-            dgvPhongban.DataSource=pbb.getPHONGBAN();
-        }
-		
-		//them
-		
-		
-        private void btnthem_Click(object sender, EventArgs e)
-        {
-
-            int sonv=0;
-            if (txtMaPB.Text.Trim() == "")
-                MessageBox.Show("Mã phòng ban không được để trống !");
-            else if (txtTenPB.Text.Trim() == "")
-                MessageBox.Show("Tên phòng ban không được để trống !");
-            else
-                pbb.insertPB(txtMaPB.Text,txtTenPB.Text,sonv,txtMota.Text);
-            Quanlyphongban_Load(sender, e);
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            if (txtMaPB.Text.Trim() == "")
-                MessageBox.Show("Mã phòng ban không được để trống !");
-            else if (txtTenPB.Text.Trim() == "")
-                MessageBox.Show("Tên phòng ban không được để trống !");
-            else
-            {
-                try
-                {
-                    pbb.updatePB(txtMaPB.Text, txtTenPB.Text, int.Parse(txtSoNV.Text), txtMota.Text);
-                }
-                catch (FormatException ex)
-                {
-                    MessageBox.Show("Số nhân viên phải là kiểu số nguyên !"+ex.Message);
-                }
-            }
-            Quanlyphongban_Load(sender, e);
-        }
-		
-		public void deletepb( String maPB)
-        {
-            String sql = "delete PHONGBAN where id_Pb='" + maPB + "'";
-            try
-            {
-                dt.ExcuteNonQuery(sql);
-                MessageBox.Show("Xóa thành công !");
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show("Lỗi CSDL !" + ex.Message);
-
-            }
-        }
-
         private void Quanlyphongban_Load(object sender, EventArgs e)
         {
             dgvPhongban.DataSource=pbb.getPHONGBAN();

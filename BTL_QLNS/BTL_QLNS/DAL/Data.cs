@@ -10,7 +10,7 @@ namespace BTL_QLNS.DAL
     {
         public SqlConnection getConnect()
         {
-            String strConn = @"Data Source=DESKTOP-LU3DNCC\SQLEXPRESS;Initial Catalog=Quanlynhasu_3F;Integrated Security=True";
+            String strConn = @"Data Source=DESKTOP-42NHODK;Initial Catalog=Quanlynhasu_3F;Integrated Security=True";
             return new SqlConnection(strConn);
         }
         public DataTable getTable(String sql)
