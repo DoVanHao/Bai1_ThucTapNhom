@@ -11,6 +11,7 @@ namespace BTL_QLNS
 {
     public partial class Quanlyphongban : Form
     {
+    //Quan li phong ban
         public Quanlyphongban()
         {
             InitializeComponent();
@@ -40,7 +41,7 @@ namespace BTL_QLNS
             dgvPhongban.DataSource = pbb.Search(txtSearch.Text);
 
         }
-
+        //button sua
         private void btnthem_Click(object sender, EventArgs e)
         {
             int sonv=0;
@@ -52,7 +53,7 @@ namespace BTL_QLNS
                 pbb.insertPB(txtMaPB.Text,txtTenPB.Text,sonv,txtMota.Text);
             Quanlyphongban_Load(sender, e);
         }
-
+        //button sua
         private void btnSua_Click(object sender, EventArgs e)
         {
             if (txtMaPB.Text.Trim() == "")
@@ -84,6 +85,7 @@ namespace BTL_QLNS
             int index = e.RowIndex;
             if (index >= 0)
             {
+
                 txtMaPB.Text = dgvPhongban.Rows[index].Cells[0].Value.ToString();
                 txtTenPB.Text = dgvPhongban.Rows[index].Cells[1].Value.ToString();
                 txtSoNV.Text = dgvPhongban.Rows[index].Cells[2].Value.ToString();
@@ -116,6 +118,7 @@ namespace BTL_QLNS
 		
         private void btnthem_Click(object sender, EventArgs e)
         {
+
             int sonv=0;
             if (txtMaPB.Text.Trim() == "")
                 MessageBox.Show("Mã phòng ban không được để trống !");

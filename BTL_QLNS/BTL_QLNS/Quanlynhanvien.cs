@@ -46,7 +46,7 @@ namespace BTL_QLNS
             this.Hide();
         }
 
-
+        // Button Sua
 
         private void btnSua_Click(object sender, EventArgs e)
         {
@@ -69,13 +69,13 @@ namespace BTL_QLNS
                 nvb.updateNV(txtMaNv.Text, txtTenNv.Text, dtpNgaysinh.Value.ToString("dd/MM/yyyy"), txtDiachi.Text, luongnv, cbxPhongban.SelectedValue.ToString(), cbxDuan.SelectedValue.ToString());
             Quanlynhanvien_Load(sender, e);
         }
-
+        //button xoa
         private void btnXoa_Click(object sender, EventArgs e)
         {
             nvb.deleteNV(txtMaNv.Text);
             Quanlynhanvien_Load(sender, e);
         }
-
+        //Thap tac khi nhan vao o
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             String mapb, mada;
@@ -93,7 +93,7 @@ namespace BTL_QLNS
                 cbxDuan.Text = nvb.selectDA(mada);
             }
         }
-
+        //button tim kiem
         private void btnTim_Click(object sender, EventArgs e)
         {
             dgvNhanVien.DataSource = nvb.Search(txtSearch.Text);
