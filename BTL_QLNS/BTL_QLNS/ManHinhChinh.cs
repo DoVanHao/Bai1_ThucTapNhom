@@ -21,6 +21,7 @@ namespace BTL_QLNS
         }
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
+        //hien thi ra frm chính
             Quanlynhanvien frmnv = new Quanlynhanvien();
             frmnv.Show();
             this.Hide();

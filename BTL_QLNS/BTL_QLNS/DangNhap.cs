@@ -41,6 +41,7 @@ namespace BTL_QLNS
             this.Show();
         }
         User_BUS ub = new User_BUS();
+        //tao trinh dang nhap
         private void btnDangnhap_Click(object sender, EventArgs e)
         {
             String condition;
@@ -75,7 +76,7 @@ namespace BTL_QLNS
                 MessageBox.Show("Lỗi kết nối CSDL !");
             }
         }
-
+        //dang ki
         private void btnDangky_Click(object sender, EventArgs e)
         {
             DangKy frmdk = new DangKy();
