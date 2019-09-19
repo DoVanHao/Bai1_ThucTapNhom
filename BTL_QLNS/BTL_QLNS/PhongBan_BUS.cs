@@ -84,5 +84,36 @@ namespace BTL_QLNS.BUS
 
             }
         }
+		
+		// thêm
+		
+		public void insertpb(String maPB, String tenPB, int sonv, String mota)
+        {
+            String sql = " insert into PHONGBAN values('" + maPB + "',N'" + tenPB + "','" + sonv + "',N'" + mota + "')";
+            try
+            {
+                dt.ExcuteNonQuery(sql);
+                MessageBox.Show("Thêm thành công !");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Thêm thất bại !");
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void updatepb(String maPB, String tenPB, int sonv, String mota)
+        {
+            String sql = "UPDATE PHONGBAN set name_PB=N'" + tenPB + "',sonv_Pb='" + sonv + "',mota_Pb=N'" + mota + "' where id_Pb='" + maPB + "'";
+            try
+            {
+                dt.ExcuteNonQuery(sql);
+                MessageBox.Show("Sửa thành công !");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Sửa thất bại !");
+                MessageBox.Show(ex.Message);
+            }
+        }
 
 }
