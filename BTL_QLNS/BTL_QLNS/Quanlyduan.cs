@@ -167,5 +167,49 @@ private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
             }
         }
 		
+		// thêm
+		private void dgvNhanVien_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            String mapb, mada;
+            int row = e.RowIndex;
+            if (row >= 0)
+            {
+                txtMaNv.Text = dgvNhanVien.Rows[row].Cells[0].Value.ToString();
+                txtTenNv.Text = dgvNhanVien.Rows[row].Cells[1].Value.ToString();
+                dtpNgaysinh.Text = dgvNhanVien.Rows[row].Cells[2].Value.ToString();
+                txtDiachi.Text = dgvNhanVien.Rows[row].Cells[3].Value.ToString();
+                txtLuong.Text = dgvNhanVien.Rows[row].Cells[4].Value.ToString();
+                mapb = dgvNhanVien.Rows[row].Cells[5].Value.ToString();
+                mada = dgvNhanVien.Rows[row].Cells[6].Value.ToString();
+                cbxPhongban.Text = nvb.selectPB(mapb);
+                cbxDuan.Text = nvb.selectDA(mada);
+            }
+        }
+
+        private void btnTim_Click_1(object sender, EventArgs e)
+        {
+            dgvNhanVien.DataSource = nvb.Search(txtSearch.Text);
+        }
+
+        private void btnreset_Click(object sender, EventArgs e)
+        {
+            txtDiachi.Text = "";
+            txtLuong.Text = "";
+            txtMaNv.Text = "";
+            txtSearch.Text = "";
+            txtTenNv.Text = "";
+        }
+		private void btnthem_Click_1(object sender, EventArgs e)
+        {
+            int sonv = 0;
+            if (txtMaDA.Text.Trim() == "")
+                MessageBox.Show("Mã dự án không được để trống !");
+            else if (txtTenDA.Text.Trim() == "")
+                MessageBox.Show("Tên dự án không được để trống !");
+            else
+                dab.insertDA(txtMaDA.Text, txtTenDA.Text, sonv, txtMotaDA.Text);
+            Quanlyduan_Load(sender, e);
+        }
+		
     }
 }
