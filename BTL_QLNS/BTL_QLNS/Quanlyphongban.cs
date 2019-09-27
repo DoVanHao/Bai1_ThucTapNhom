@@ -110,5 +110,40 @@ namespace BTL_QLNS
         {
             dgvPhongban.DataSource=pbb.getPHONGBAN();
         }
+		
+		//them
+		
+		
+        private void btnthem_Click(object sender, EventArgs e)
+        {
+            int sonv=0;
+            if (txtMaPB.Text.Trim() == "")
+                MessageBox.Show("Mã phòng ban không được để trống !");
+            else if (txtTenPB.Text.Trim() == "")
+                MessageBox.Show("Tên phòng ban không được để trống !");
+            else
+                pbb.insertPB(txtMaPB.Text,txtTenPB.Text,sonv,txtMota.Text);
+            Quanlyphongban_Load(sender, e);
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (txtMaPB.Text.Trim() == "")
+                MessageBox.Show("Mã phòng ban không được để trống !");
+            else if (txtTenPB.Text.Trim() == "")
+                MessageBox.Show("Tên phòng ban không được để trống !");
+            else
+            {
+                try
+                {
+                    pbb.updatePB(txtMaPB.Text, txtTenPB.Text, int.Parse(txtSoNV.Text), txtMota.Text);
+                }
+                catch (FormatException ex)
+                {
+                    MessageBox.Show("Số nhân viên phải là kiểu số nguyên !"+ex.Message);
+                }
+            }
+            Quanlyphongban_Load(sender, e);
+        }
     }
 }
