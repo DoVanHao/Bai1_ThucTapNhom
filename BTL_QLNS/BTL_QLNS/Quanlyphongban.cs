@@ -145,5 +145,25 @@ namespace BTL_QLNS
             }
             Quanlyphongban_Load(sender, e);
         }
+		
+		public void deletepb(String maPB)
+        {
+            String sql = "delete PHONGBAN where id_Pb='" + maPB + "'";
+            try
+            {
+                dt.ExcuteNonQuery(sql);
+                MessageBox.Show("Xóa thành công !");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Lỗi CSDL !" + ex.Message);
+
+            }
+        }
+
+        private void Quanlyphongban_Load(object sender, EventArgs e)
+        {
+            dgvPhongban.DataSource=pbb.getPHONGBAN();
+        }
     }
 }
