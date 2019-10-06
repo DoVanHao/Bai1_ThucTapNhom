@@ -146,7 +146,7 @@ namespace BTL_QLNS
             Quanlyphongban_Load(sender, e);
         }
 		
-		public void deletepb(String maPB)
+		public void deletepb( String maPB)
         {
             String sql = "delete PHONGBAN where id_Pb='" + maPB + "'";
             try
