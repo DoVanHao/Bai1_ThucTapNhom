@@ -24,13 +24,7 @@ namespace BTL_QLNS.BUS
             String sql = "insert into DANGNHAP values('" + username + "','" + pass + "','" + manv + "')";
             da.ExcuteNonQuery(sql);
         }
-        public DataTable Search(String condi)
-        {
-            DataTable da = null;
-            String sql = "Select * from DUAN where id_DA like N'%" + condi + "%' OR name_DA like N'%" + condi + "%'";
-            da = dt.getTable(sql);
-            return da;
-        }
+        
         public String selectPB(String mapb)
         {
             String tenpb;
