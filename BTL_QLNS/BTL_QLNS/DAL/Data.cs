@@ -51,5 +51,17 @@ namespace BTL_QLNS.DAL
             
             return kq;
         }
+        public String ExcuteChange(String sql)
+        {
+            SqlConnection connstring = getConnect();
+            if (connstring.State == ConnectionState.Closed)
+            {
+                connstring.Open();
+            }
+            SqlCommand cmd = new SqlCommand(sql, connstring);
+            String kq = cmd.ExecuteScalar().ToString();
+
+            return kq;
+        }
     }
 }
