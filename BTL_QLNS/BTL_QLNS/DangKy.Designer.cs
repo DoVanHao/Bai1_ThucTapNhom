@@ -47,10 +47,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.ForeColor = System.Drawing.Color.PowderBlue;
-            this.label3.Location = new System.Drawing.Point(246, 44);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(184, 36);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 31);
+            this.label3.Size = new System.Drawing.Size(98, 25);
             this.label3.TabIndex = 0;
             this.label3.Text = "Đăng ký";
             // 
@@ -60,10 +59,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(104, 161);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(78, 131);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 24);
+            this.label2.Size = new System.Drawing.Size(63, 18);
             this.label2.TabIndex = 3;
             this.label2.Text = "Mã NV:";
             // 
@@ -73,10 +71,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(101, 106);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(76, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 24);
+            this.label1.Size = new System.Drawing.Size(87, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tài khoản:";
             // 
@@ -84,10 +81,9 @@
             // 
             this.btnDangky.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnDangky.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDangky.Location = new System.Drawing.Point(317, 347);
-            this.btnDangky.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDangky.Location = new System.Drawing.Point(238, 282);
             this.btnDangky.Name = "btnDangky";
-            this.btnDangky.Size = new System.Drawing.Size(162, 65);
+            this.btnDangky.Size = new System.Drawing.Size(122, 53);
             this.btnDangky.TabIndex = 10;
             this.btnDangky.Text = "Đăng ký";
             this.btnDangky.UseVisualStyleBackColor = true;
@@ -97,10 +93,9 @@
             // 
             this.btnTrolai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTrolai.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnTrolai.Location = new System.Drawing.Point(105, 347);
-            this.btnTrolai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTrolai.Location = new System.Drawing.Point(79, 282);
             this.btnTrolai.Name = "btnTrolai";
-            this.btnTrolai.Size = new System.Drawing.Size(150, 65);
+            this.btnTrolai.Size = new System.Drawing.Size(112, 53);
             this.btnTrolai.TabIndex = 9;
             this.btnTrolai.Text = "Trở lại";
             this.btnTrolai.UseVisualStyleBackColor = true;
@@ -112,10 +107,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(104, 215);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(78, 175);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 24);
+            this.label4.Size = new System.Drawing.Size(82, 18);
             this.label4.TabIndex = 5;
             this.label4.Text = "Mật khẩu:";
             // 
@@ -125,58 +119,53 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(104, 279);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(78, 227);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 24);
+            this.label5.Size = new System.Drawing.Size(74, 18);
             this.label5.TabIndex = 7;
             this.label5.Text = "Nhập lại:";
             // 
             // txtTaikhoan
             // 
             this.txtTaikhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTaikhoan.Location = new System.Drawing.Point(252, 103);
-            this.txtTaikhoan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTaikhoan.Location = new System.Drawing.Point(189, 84);
             this.txtTaikhoan.Name = "txtTaikhoan";
-            this.txtTaikhoan.Size = new System.Drawing.Size(227, 30);
+            this.txtTaikhoan.Size = new System.Drawing.Size(171, 26);
             this.txtTaikhoan.TabIndex = 2;
             // 
             // txtMaNv
             // 
             this.txtMaNv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtMaNv.Location = new System.Drawing.Point(252, 161);
-            this.txtMaNv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaNv.Location = new System.Drawing.Point(189, 131);
             this.txtMaNv.Name = "txtMaNv";
-            this.txtMaNv.Size = new System.Drawing.Size(227, 30);
+            this.txtMaNv.Size = new System.Drawing.Size(171, 26);
             this.txtMaNv.TabIndex = 4;
             // 
             // txtMatkhau
             // 
             this.txtMatkhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtMatkhau.Location = new System.Drawing.Point(252, 210);
-            this.txtMatkhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMatkhau.Location = new System.Drawing.Point(189, 171);
             this.txtMatkhau.Name = "txtMatkhau";
             this.txtMatkhau.PasswordChar = 'c';
-            this.txtMatkhau.Size = new System.Drawing.Size(227, 30);
+            this.txtMatkhau.Size = new System.Drawing.Size(171, 26);
             this.txtMatkhau.TabIndex = 6;
             // 
             // txtNhaplai
             // 
             this.txtNhaplai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtNhaplai.Location = new System.Drawing.Point(252, 270);
-            this.txtNhaplai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNhaplai.Location = new System.Drawing.Point(189, 219);
             this.txtNhaplai.Name = "txtNhaplai";
             this.txtNhaplai.PasswordChar = 'c';
-            this.txtNhaplai.Size = new System.Drawing.Size(227, 30);
+            this.txtNhaplai.Size = new System.Drawing.Size(171, 26);
             this.txtNhaplai.TabIndex = 8;
             // 
             // DangKy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BTL_QLNS.Properties.Resources.dangky;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(579, 444);
+            this.ClientSize = new System.Drawing.Size(460, 361);
             this.Controls.Add(this.txtNhaplai);
             this.Controls.Add(this.txtMatkhau);
             this.Controls.Add(this.txtMaNv);
@@ -190,7 +179,6 @@
             this.Controls.Add(this.btnTrolai);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DangKy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng ký";

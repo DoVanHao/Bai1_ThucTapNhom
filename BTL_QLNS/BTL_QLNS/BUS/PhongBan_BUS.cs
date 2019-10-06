@@ -47,6 +47,13 @@ namespace BTL_QLNS.BUS
                 MessageBox.Show(ex.Message);
             }
         }
+        public DataTable Search(String condi)
+        {
+            DataTable da = null;
+            String sql = "Select * from PHONGBAN where id_Pb like N'    %" + condi + "%' OR name_PB like N'%" + condi + "%'";
+            da = dt.getTable(sql);
+            return da;
+        }
        
         public String selectPB(String mapb)
         {
@@ -56,7 +63,7 @@ namespace BTL_QLNS.BUS
             return tenpb;
 
             DataTable da = null;
-            String sql = "Select * from DUAN where id_DA like N'%" + condi + "%' OR name_DA like N'%" + condi + "%'";
+            String tenpb = "Select * from DUAN where id_DA like N'%" + condi + "%' OR name_DA like N'%" + condi + "%'";
             da = dt.getTable(sql);
 
         }
