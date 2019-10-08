@@ -54,7 +54,26 @@ namespace BTL_QLNS
                 pbb.insertPB(txtMaPB.Text,txtTenPB.Text,sonv,txtMota.Text);
             Quanlyphongban_Load(sender, e);
         }
-
+        private void btnThemSP_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < dgvSPX.Rows.Count; i++)
+            {
+                if (dgvSPX.Rows[i].Cells[0].Value == dgvSP.Rows[dgvSP.SelectedRows[0].Index].Cells[0].Value)
+                {
+                    MessageBox.Show("Sản phẩm đã được chọn !!!", "Nhắc nhở", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+            if (dgvSP.SelectedRows.Count > 0)
+            {
+                dgvSPX.Rows.AddRange(new DataGridViewRow());
+                dgvSPX.Rows[dgvSPX.RowCount - 2].Cells[0].Value = dgvSP.Rows[dgvSP.SelectedRows[0].Index].Cells[0].Value;
+                dgvSPX.Rows[dgvSPX.RowCount - 2].Cells[1].Value = numericUpDownSL.Value;
+                dgvSPX.Rows[dgvSPX.RowCount - 2].Cells[2].Value = numericUpDownGN.Value;
+                dgvSPX.Rows[dgvSPX.RowCount - 2].Cells[3].Value = int.Parse(numericUpDownSL.Value.ToString()) * long.Parse(numericUpDownGN.Value.ToString());
+            }
+        }
+		
         private void btnSua_Click(object sender, EventArgs e)
         {
             if (txtMaPB.Text.Trim() == "")
