@@ -39,5 +39,18 @@ namespace BTL_QLNS.BUS
             da = dt.getTable(sql);
             return da;
         }
+        public String selectPB(String mapb)
+        {
+            String tenpb;
+            String sql = "select name_Pb from PHONGBAN where id_Pb='" + mapb + "'";
+            tenpb.Except();
+            return tenpb;
+
+            DataTable da = null;
+            String tenpb = "Select * from DUAN where id_DA like N'%" + condi + "%' OR name_DA like N'%" + condi + "%'";
+            da = dt.getTable(sql);
+
+        }
+
     }
 }

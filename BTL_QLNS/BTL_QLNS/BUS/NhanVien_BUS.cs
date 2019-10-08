@@ -17,6 +17,7 @@ namespace BTL_QLNS.BUS
             String sql = "Select * from NhanVien ";
             da = dt.getTable(sql);
             return da;
+            da.fill();
         }
         private void btnExit_Click_1(object sender, EventArgs e)
         {
@@ -61,7 +62,19 @@ namespace BTL_QLNS.BUS
             da = dt.getTable(sql);
             return da;
         }
-       
+        public String selectPB(String mapb)
+        {
+            String tenpb;
+            String sql = "select name_Pb from PHONGBAN where id_Pb='" + mapb + "'";
+            tenpb = dt.ExcuteScalar(sql);
+            return tenpb;
+
+            DataTable da = null;
+            String tenpb = "Select * from DUAN where id_DA like N'%" + condi + "%' OR name_DA like N'%" + condi + "%'";
+            da = dt.getTable(sql);
+
+        }
+
         public String selectDA(String mada)
         {
             String tenda;

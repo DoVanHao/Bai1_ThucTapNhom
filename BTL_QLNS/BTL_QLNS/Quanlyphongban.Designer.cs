@@ -140,7 +140,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(103, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(577, 244);
+            this.panel2.Size = new System.Drawing.Size(572, 244);
             this.panel2.TabIndex = 1;
             // 
             // panel5
@@ -160,7 +160,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(577, 244);
+            this.panel5.Size = new System.Drawing.Size(572, 244);
             this.panel5.TabIndex = 10;
             // 
             // panel6
@@ -180,7 +180,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(577, 244);
+            this.panel6.Size = new System.Drawing.Size(572, 244);
             this.panel6.TabIndex = 11;
             // 
             // panel7
@@ -202,7 +202,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(577, 244);
+            this.panel7.Size = new System.Drawing.Size(572, 244);
             this.panel7.TabIndex = 0;
             // 
             // btnXoa
@@ -615,7 +615,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(103, 253);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(577, 155);
+            this.panel3.Size = new System.Drawing.Size(572, 155);
             this.panel3.TabIndex = 2;
             // 
             // dgvPhongban
@@ -629,7 +629,7 @@
             this.dgvPhongban.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPhongban.Location = new System.Drawing.Point(0, 0);
             this.dgvPhongban.Name = "dgvPhongban";
-            this.dgvPhongban.Size = new System.Drawing.Size(577, 155);
+            this.dgvPhongban.Size = new System.Drawing.Size(572, 155);
             this.dgvPhongban.TabIndex = 0;
             this.dgvPhongban.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPhongban_CellClick);
             // 
@@ -666,7 +666,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(103, 414);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(577, 44);
+            this.panel4.Size = new System.Drawing.Size(572, 44);
             this.panel4.TabIndex = 3;
             // 
             // lblLicense
@@ -719,14 +719,14 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 250F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(783, 461);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(778, 461);
             this.tableLayoutPanel1.TabIndex = 9;
             // 
             // Quanlyphongban
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(783, 461);
+            this.ClientSize = new System.Drawing.Size(778, 461);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);

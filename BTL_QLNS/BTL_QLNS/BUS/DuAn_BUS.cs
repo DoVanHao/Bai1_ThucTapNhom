@@ -16,8 +16,9 @@ namespace BTL_QLNS.BUS
         {
             DataTable da = null;
             String sql = "Select * from DUAN ";
-            da = dt.getTable(sql);
+            da = dt.getTable(sql);           
             return da;
+            da.Clear();
         }
         public DataTable Search(String condi)
         {
@@ -65,7 +66,7 @@ namespace BTL_QLNS.BUS
             catch (SqlException ex)
             {
                 MessageBox.Show("Lỗi CSDL !" + ex.Message);
-
+            
             }
         }
       
