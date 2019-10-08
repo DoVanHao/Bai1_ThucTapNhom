@@ -243,6 +243,28 @@ namespace BTL_QLNS
             Quanlynhanvien_Load(sender, e);
 
         }
+		//them
+		private void Suanvnv(object sender, EventArgs e)
+        {
+            int luongnv = 0;
+            try
+            {
+                luongnv = int.Parse(txtLuong.Text);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Kiểu dữ liệu của lương phải là kiểu số !");
+            }
+            if (txtMaNv.Text.Trim() == "")
+                MessageBox.Show("Mã nhân viên không được để trống !");
+            else if (txtTenNv.Text.Trim() == "")
+                MessageBox.Show("Tên nhân viên không được để trống !");
+            else if (luongnv == 0)
+                MessageBox.Show("Sửa thất bại !");
+            else
+                nvb.updateNV(txtMaNv.Text, txtTenNv.Text, dtpNgaysinh.Value.ToString("dd/MM/yyyy"), txtDiachi.Text, luongnv, cbxPhongban.SelectedValue.ToString(), cbxDuan.SelectedValue.ToString());
+            Quanlynhanvien_Load(sender, e);
+        }
 		
     }
 }
