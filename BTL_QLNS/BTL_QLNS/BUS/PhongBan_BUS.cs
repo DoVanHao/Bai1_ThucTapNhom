@@ -47,6 +47,12 @@ namespace BTL_QLNS.BUS
                 MessageBox.Show(ex.Message);
             }
         }
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            ManHinhChinh frmmch = new ManHinhChinh();
+            frmmch.Show();
+            this.Hide();
+        }
         public DataTable Search(String condi)
         {
             DataTable da = null;
@@ -54,7 +60,6 @@ namespace BTL_QLNS.BUS
             da = dt.getTable(sql);
             return da;
         }
-       
-       
+            
     }
 }

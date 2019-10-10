@@ -48,7 +48,7 @@ namespace BTL_QLNS.DAL
             }
             SqlCommand cmd = new SqlCommand(sql, conn);
             String kq=cmd.ExecuteScalar().ToString();
-            conn.Close();
+            
             return kq;
         }
     }

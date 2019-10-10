@@ -19,12 +19,7 @@ namespace BTL_QLNS.BUS
             return da;
             da.fill();
         }
-        private void btnExit_Click_1(object sender, EventArgs e)
-        {
-            ManHinhChinh frmmch = new ManHinhChinh();
-            frmmch.Show();
-            this.Hide();
-        }
+       
 
         public void insertNV(String manv, String tennv, String ngaysinh, String diachi, int luong, String mapb, String mada)
         {

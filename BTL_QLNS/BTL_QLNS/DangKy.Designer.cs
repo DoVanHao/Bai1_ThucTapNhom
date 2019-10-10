@@ -95,7 +95,7 @@
             this.btnTrolai.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnTrolai.Location = new System.Drawing.Point(79, 282);
             this.btnTrolai.Name = "btnTrolai";
-            this.btnTrolai.Size = new System.Drawing.Size(112, 53);
+            this.btnTrolai.Size = new System.Drawing.Size(117, 53);
             this.btnTrolai.TabIndex = 9;
             this.btnTrolai.Text = "Trở lại";
             this.btnTrolai.UseVisualStyleBackColor = true;
@@ -165,7 +165,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BTL_QLNS.Properties.Resources.dangky;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(460, 361);
+            this.ClientSize = new System.Drawing.Size(469, 361);
             this.Controls.Add(this.txtNhaplai);
             this.Controls.Add(this.txtMatkhau);
             this.Controls.Add(this.txtMaNv);
