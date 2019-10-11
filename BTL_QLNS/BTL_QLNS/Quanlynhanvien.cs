@@ -177,51 +177,8 @@ namespace BTL_QLNS
             Quanlynhanvien_Load(sender, e);
 
         }
-        private void btnThem_Click_2(object sender, EventArgs e)
-        {
-            int luongnv=0 ;
-            try
-            {
-                luongnv = int.Parse(txtLuong.Text);
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Kiểu dữ liệu của lương phải là kiểu số !");
-            }
-            if (txtMaNv.Text.Trim() == "")
-                MessageBox.Show("Mã nhân viên không được để trống !");
-            else if (txtTenNv.Text.Trim() == "")
-                MessageBox.Show("Tên nhân viên không được để trống !");
-            else if (luongnv == 0)
-                MessageBox.Show("Thêm thất bại !");
-            else
-                nvb.insertNV(txtMaNv.Text, txtTenNv.Text, dtpNgaysinh.Value.ToString("dd/MM/yyyy"), txtDiachi.Text, luongnv, cbxPhongban.SelectedValue.ToString(), cbxDuan.SelectedValue.ToString());
-            Quanlynhanvien_Load(sender, e);
 
-        }
-
-        private void btnSua_Click_2(object sender, EventArgs e)
-        {
-            int luongnv = 0;
-            try
-            {
-                luongnv = int.Parse(txtLuong.Text);
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Kiểu dữ liệu của lương phải là kiểu số !");
-            }
-            if (txtMaNv.Text.Trim() == "")
-                MessageBox.Show("Mã nhân viên không được để trống !");
-            else if (txtTenNv.Text.Trim() == "")
-                MessageBox.Show("Tên nhân viên không được để trống !");
-            else if (luongnv == 0)
-                MessageBox.Show("Sửa thất bại !");
-            else
-                nvb.updateNV(txtMaNv.Text, txtTenNv.Text, dtpNgaysinh.Value.ToString("dd/MM/yyyy"), txtDiachi.Text, luongnv, cbxPhongban.SelectedValue.ToString(), cbxDuan.SelectedValue.ToString());
-            Quanlynhanvien_Load(sender, e);
-        }
-		        private void btnThem_Click(object sender, EventArgs e)
+		private void btnThem_Click(object sender, EventArgs e)
         {
             int luongnv=0 ;
             try
@@ -264,6 +221,28 @@ namespace BTL_QLNS
             else
                 nvb.updateNV(txtMaNv.Text, txtTenNv.Text, dtpNgaysinh.Value.ToString("dd/MM/yyyy"), txtDiachi.Text, luongnv, cbxPhongban.SelectedValue.ToString(), cbxDuan.SelectedValue.ToString());
             Quanlynhanvien_Load(sender, e);
+        }
+		private void Themnv(object sender, EventArgs e)
+        {
+            int luongnv=0 ;
+            try
+            {
+                luongnv = int.Parse(txtLuong.Text);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Kiểu dữ liệu của lương phải là kiểu số !");
+            }
+            if (txtMaNv.Text.Trim() == "")
+                MessageBox.Show("Mã nhân viên không được để trống !");
+            else if (txtTenNv.Text.Trim() == "")
+                MessageBox.Show("Tên nhân viên không được để trống !");
+            else if (luongnv == 0)
+                MessageBox.Show("Thêm thất bại !");
+            else
+                nvb.insertNV(txtMaNv.Text, txtTenNv.Text, dtpNgaysinh.Value.ToString("dd/MM/yyyy"), txtDiachi.Text, luongnv, cbxPhongban.SelectedValue.ToString(), cbxDuan.SelectedValue.ToString());
+            Quanlynhanvien_Load(sender, e);
+
         }
 		
     }
