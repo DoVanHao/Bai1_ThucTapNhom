@@ -19,6 +19,18 @@ namespace BTL_QLNS.BUS
             dt=da.getTable(sql);
             return dt;
         }
+        public String selectPB1(String mapb)
+        {
+            String tenpb;
+            String sql = "select name_Pb from PHONGBAN where id_Pb='" + mapb + "'";
+            tenpb.Except();
+            return tenpb;
+
+            DataTable da = null;
+            String tenpb = "Select * from DUAN where id_DA like N'%" + condi + "%' OR name_DA like N'%" + condi + "%'";
+            da = dt.getTable(sql);
+
+        }
         public void insertUser(String username, String pass, String manv)
         {
             String sql = "insert into DANGNHAP values('" + username + "','" + pass + "','" + manv + "')";
@@ -51,6 +63,19 @@ namespace BTL_QLNS.BUS
             da = dt.getTable(sql);
 
         }
-
+        public DataTable getUser1(String condition)
+        {
+            DataTable dt = null;
+            String sql = "Select * from DANGNHAP where " + condition;
+            dt = da.getTable(sql);
+            return dt;
+        }
+        public DataTable Search1(String condi)
+        {
+            DataTable da = null;
+            String sql = "Select * from PHONGBAN where id_Pb like N'%" + condi + "%' OR name_PB like N'%" + condi + "%'";
+            da = dt.getTable(sql);
+            return da;
+        }
     }
 }
