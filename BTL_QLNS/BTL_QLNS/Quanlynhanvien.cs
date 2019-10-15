@@ -69,6 +69,39 @@ namespace BTL_QLNS
                 nvb.updateNV(txtMaNv.Text, txtTenNv.Text, dtpNgaysinh.Value.ToString("dd/MM/yyyy"), txtDiachi.Text, luongnv, cbxPhongban.SelectedValue.ToString(), cbxDuan.SelectedValue.ToString());
             Quanlynhanvien_Load(sender, e);
         }
+
+private void btnDangky_Click(object sender, EventArgs e)
+        {
+            User_BUS ub = new User_BUS();
+            try
+            {
+                if (txtNhaplai.Text == txtMatkhau.Text)
+                {
+                    ub.insertUser(txtTaikhoan.Text, txtMatkhau.Text, txtMaNv.Text);
+                    MessageBox.Show("Đăng ký tài khoản thành công !");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Mật khẩu nhập lại không đúng !");
+                }
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Bạn nhập sai cú pháp !");
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Lỗi kết nối CSDL!");
+            }
+
+        }
+		
+		// them
+		private void DangKy_Loadform(object sender, EventArgs e)
+        {
+
+        }
         //button xoa
         private void btnXoa_Click(object sender, EventArgs e)
         {
@@ -94,19 +127,7 @@ namespace BTL_QLNS
             }
         }
         //button tim kiem
-        private void btnTim_Click(object sender, EventArgs e)
-        {
-            dgvNhanVien.DataSource = nvb.Search(txtSearch.Text);
-        }
 
-        private void btnreset_Click(object sender, EventArgs e)
-        {
-            txtDiachi.Text = "";
-            txtLuong.Text = "";
-            txtMaNv.Text = "";
-            txtSearch.Text = "";
-            txtTenNv.Text = "";
-        }
 
         private void ExportExcel(DataGridView dgv, string duongDan, string tenTap)
         {
