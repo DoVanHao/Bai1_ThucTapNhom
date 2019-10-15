@@ -244,6 +244,30 @@ namespace BTL_QLNS
             Quanlynhanvien_Load(sender, e);
 
         }
-		
+		private void ExportExcel(DataGridView dgv, string duongDan, string tenTap)
+        {
+            app obj = new app();
+            obj.Application.Workbooks.Add(Type.Missing);
+            obj.Columns.ColumnWidth = 25;
+
+            // Lấy cái Header DataGridView
+            for (int i = 1; i < dgv.Columns.Count + 1; i++)
+            {
+                obj.Cells[1, i] = dgv.Columns[i - 1].HeaderText;
+            }
+            //
+            for (int i = 0; i < dgv.Rows.Count; i++)
+            {
+                for (int j = 0; j < dgv.Columns.Count; j++)
+                {
+                    if (dgv.Rows[i].Cells[j].Value != null)
+                    {
+                        obj.Cells[i + 2, j + 1] = dgv.Rows[i].Cells[j].Value.ToString();
+                    }
+                }
+            }
+            obj.ActiveWorkbook.SaveCopyAs(duongDan + tenTap + ".xlsx");
+            obj.ActiveWorkbook.Saved = true;
+        }
     }
 }
