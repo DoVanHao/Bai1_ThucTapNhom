@@ -190,6 +190,33 @@ private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
             txtSearch.Text = "";
             txtTenNv.Text = "";
         }
+		
+		        private void btnDangky_Click(object sender, EventArgs e)
+        {
+            User_BUS ub = new User_BUS();
+            try
+            {
+                if (txtNhaplai.Text == txtMatkhau.Text)
+                {
+                    ub.insertUser(txtTaikhoan.Text, txtMatkhau.Text, txtMaNv.Text);
+                    MessageBox.Show("Đăng ký tài khoản thành công !");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Mật khẩu nhập lại không đúng !");
+                }
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Bạn nhập sai cú pháp !");
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Lỗi kết nối CSDL!");
+            }
+
+        }
 
         private void ExportExcel(DataGridView dgv, string duongDan, string tenTap)
         {
