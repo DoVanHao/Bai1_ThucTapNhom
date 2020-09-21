@@ -1,0 +1,185 @@
+:Base fl_sim_p.hlp
+:Title FluidSIM 3 Pneumatik Hilfe
+1 Inhalt=Contents
+1 Willkommen!
+1 Willkommen!=welcome
+1 Über FluidSIM=welcome_about
+2 Aufbau des Begleitbuches
+2 Aufbau des Begleitbuches=welcome_contents
+2 Handbuch-Teil=welcome_contents_user
+2 Referenz-Teil=TOPIC.17
+1 Konventionen=welcome_conventions
+1 Die ersten Schritte
+1 Die ersten Schritte=first
+1 Technische Voraussetzungen=first_requirements
+2 Installation
+2 Installation=first_installation
+2 Installation mit anschließender Programm-Aktivierung=TOPIC.16
+2 Installation mit einem Lizenzstecker=TOPIC.15
+2 Installation der Vollversion von CD-ROM=TOPIC.14
+2 Installation der Studentenversion=TOPIC.13
+2 Wichtige Hinweise zur Online-Aktivierung=first_important_activation
+2 Wichtige Hinweise zur Verwendung des Einzelplatz-Lizenzsteckers (blau)=first_important_dongle
+1 Mitgelieferte Dateien=first_files
+1 Deinstallation der Einzelplatzlizenz=first_de_installation
+1 Einführung in die Simulation und Schaltkreisstellung
+1 Einführung in die Simulation und Schaltkreisstellung=edsim_a
+1 Simulation existierender Schaltkreise=edsim_a_exist
+2 Die verschiedenen Simulationsmodi
+2 Die verschiedenen Simulationsmodi=edsim_a_modes
+2 Zurücksetzen und Neustart=edsim_a_restart
+2 Einzelschrittmodus=edsim_a_step
+2 Simulation bis Zustandswechsel=edsim_a_stc
+1 Erstellung neuer Schaltkreise=edsim_a_new
+1 Fortgeschrittene Simulation und Schaltkreiserstellung
+1 Fortgeschrittene Simulation und Schaltkreiserstellung=edsim_b
+2 Zusätzliche Bearbeitungsfunktionen
+2 Zusätzliche Bearbeitungsfunktionen=edsim_b_edit
+2 Zeichnungsgröße einstellen=edsim_b_papersize
+2 Korrektur von Bearbeitungsschritten=edsim_b_edit_correct
+2 Mehrfach-Markierung=edsim_b_edit_select
+2 Rechter Mausklick=edsim_b_edit_click_right
+2 Doppelter Mausklick=edsim_b_edit_click_double
+2 Kopieren=edsim_b_edit_copy
+2 Kopieren zwischen Fenstern=edsim_b_edit_win_copy
+2 Objekte ausrichten=edsim_b_align
+2 Rotieren=edsim_b_edit_rotate
+2 Leitungen löschen=edsim_b_edit_delete
+2 Wegeventile konfigurieren=edsim_b_config_valves
+2 Leitungstyp festlegen=edsim_b_edit_line_type
+2 Anschlussbezeichnungen, Blindstopfen und Schalldämpfer=edsim_b_edit_plug
+2 Zoomen=edsim_b_edit_zoom
+2 Hintergrundgitter=edsim_b_edit_grid
+2 Objekte gruppieren=group
+2 Gruppen auflösen=TOPIC.12
+2 Zusätzliche Simulationsfunktionen
+2 Zusätzliche Simulationsfunktionen=edsim_b_simulation
+2 Gleichzeitige Betätigung mehrerer Komponenten=edsim_b_edit_click
+2 Umschalten in den Bearbeitungsmodus=edsim_b_simulation_mode
+2 Parallele Bearbeitung und Simulation=edsim_b_simulation_parallel
+2 Automatische Verbindungserstellung
+2 Automatische Verbindungserstellung=edsim_b_auto_connect
+2 Einfügen von T-Verbindungen=edsim_b_edit_insert_t_connection
+2 Hintereinanderschaltung von Komponenten=edsim_b_edit_connect_modules
+1 Strompfadnummerierung und Schaltgliedertabellen=edsim_b_current_path_numbering
+2 Anzeige von Zustandsgrößen
+2 Anzeige von Zustandsgrößen=edsim_b_state_values
+2 Besonderheiten bei der Anzeige=edsim_b_parameters_special
+1 Anzeige von Zustandsdiagrammen=edsim_b_sim_diagrams
+1 Prüfung von Zeichnungen=edsim_b_check
+2 Kopplung von Pneumatik, Elektrik und Mechanik
+2 Kopplung von Pneumatik, Elektrik und Mechanik=edsim_b_electric_fluid
+2 Darstellung der Marken=edsim_b_label_opts
+2 Betätigung von Schaltern
+2 Betätigung von Schaltern=edsim_b_electric
+2 Schalter am Zylinder=edsim_b_electric_cyl_switch
+2 Relais=edsim_b_electric_relays
+2 Kopplung mechanischer Schalter=TOPIC.11
+2 Automatische Schaltererkennung=edsim_b_electric_switch_recognition
+1 Einstellbare Komponenten=edsim_b_comp_parameters
+2 Einstellungen für die Simulation
+2 Einstellungen für die Simulation=edsim_b_sim_preferences
+2 Simulationsparameter=edsim_b_sim_preferences_simulation
+2 Klangparameter=edsim_b_sim_preferences_sound
+1 OPC- und DDE-Kommunikation mit anderen Anwendungen=edsim_b_sim_dde
+1 Einstellungen für die OPC- bzw. DDE-Kommunikation =edsim_b_sim_options_dde
+1 Pneumatik lernen, lehren und visualisieren
+1 Pneumatik lernen, lehren und visualisieren=didactic
+2 Informationen zu einzelnen Komponenten
+2 Informationen zu einzelnen Komponenten=didactic_comp
+2 Beschreibung der Komponenten=didactic_comp_text
+2 Komponentenfotos=didactic_comp_photo
+2 Funktionsdarstellung von Komponenten=didactic_comp_function
+2 Themenbeschreibung=didactic_topic_description
+2 Lehrinhalte aus der Übersicht wählen
+2 Lehrinhalte aus der Übersicht wählen=didactic_overview
+2 Pneumatik-Grundlagen=didactic_overview_basics
+2 Funktionsdarstellung von Komponenten=didactic_overview_working
+2 Übungen=didactic_overview_exercise
+1 Präsentationen: Lehrinhalte verknüpfen=didactic_presentation
+1 Abspielen von Lehrfilmen=didactic_video
+1 Einstellungen für die Didaktik=didactic_preferences
+1 Spezielle Funktionen
+1 Spezielle Funktionen=more_ad
+1 Zeichenebenen=more_ad_layer
+2 Grafikelemente
+2 Quadrate/Rechtecke=more_ad_graphic_rectangles
+2 Kreise/Ellipsen=more_ad_graphic_ellipses
+1 Textkomponenten und Kennungen=more_ad_text_components
+2 Stücklisten
+2 Stücklisten=more_ad_parts_lists
+2 Stückliste einfügen=TOPIC.10
+2 Eigenschaften der Stückliste einstellen=more_ad_parts_lists_properties
+2 Stückliste exportieren=more_ad_parts_lists_export
+1 Drucken von Fensterinhalten=more_ad_print
+1 DXF-Export=more_ad_dxf_export
+1 DXF-Import=more_ad_dxf_import
+2 Komponentenbibliotheken verwenden und organisieren
+2 Komponentenbibliothek umordnen=TOPIC.9
+2 Komponentenbibliotheken selbst erstellen=more_ad_build_library
+2 Komponenten über das Menü einfügen=more_ad_insert
+2 Projekte verwalten
+2 Projekte verwalten=more_ad_project
+2 Neues Projekt anlegen=more_ad_project_new
+2 Projekteigenschaften eingeben=more_ad_project_properties
+2 Dateien zum Projekt hinzufügen=TOPIC.8
+2 Dateien aus dem Projekt entfernen=TOPIC.7
+2 Projektdateien öffnen=TOPIC.6
+2 Speichern von Einstellungen
+2 Speichern von Einstellungen=more_ad_preferences
+2 Globale Einstellungen=more_ad_preferences_global
+2 Schaltkreisspezifische Einstellungen=more_ad_preferences_circuit
+2 Fensterspezifische Einstellungen=more_ad_preferences_window
+1 Hilfe und weiterführende Hinweise
+1 Hilfe und weiterführende Hinweise=help
+1 Die häufigsten Probleme=help_problems
+2 Hinweise für fortgeschrittene Anwender
+2 Hinweise für fortgeschrittene Anwender=help_advanced
+2 Datenformate der Zwischenablage=help_clipboard
+2 Medien-Wiedergabe=help_media_player
+2 Öffnen von FluidSIM-Dateien über den Explorer=help_open_file
+2 Öffnen von FluidSIM-Dateien mittels Befehlszeile=help_command_line
+2 Reorganisation des internen Speichers=help_gc
+2 Austauschen der Klangdateien=help_soundfiles
+2 Dateioperationen innerhalb von Übersichtsfenstern=help_preview_window
+2 Aufbau der Präsentationsdateien=help_didactic_presentation_format
+2 Netzwerkinstallation von FluidSIM=help_install_network
+1 FluidSIM-Menüs
+1 FluidSIM-Menüs=menus
+1 Datei=menus_file
+1 Bearbeiten=menus_edit
+1 Ausführen=menus_execute
+1 Bibliothek=MELIB
+1 Einfügen=MEINSOBJ
+1 Didaktik=menus_didactics
+1 Projekt=menus_project
+1 Ansicht=menus_view
+1 Optionen=menus_options
+1 Fenster=menus_window
+1 ?=menus_help
+1 Komponentenbibliothek
+1 Komponentenbibliothek=comp_lib
+1 Pneumatische Komponenten=TOPIC.5
+1 Elektrische Komponenten=TOPIC.4
+1 Elektrische Komponenten (Amerikanische Norm)=TOPIC.3
+1 Digitalkomponenten=TOPIC.2
+1 Sonstige Komponenten=TOPIC.1
+1 Lehrmaterialübersicht
+1 Lehrmaterialübersicht=mdida
+1 Grundlagen=mdida_basics
+1 Schaltsymbole=mdida_symbols
+1 Schaltpläne=mdida_circuits
+1 Druckluftversorgung=mdida_pressure_unit
+1 Ventile=mdida_valves
+1 Aktuatoren=mdida_actuators
+1 Übungen=mdida_exercises
+1 Ergänzungen=mdida_extensions
+1 Lehrfilme=mdida_video
+1 Standardpräsentationen=mdida_presentations
+1 Meldungen
+1 Meldungen=message
+1 Fehler in der Elektrik=message_electric
+1 Zeichnerische Fehler=message_drawing
+1 Bedienungsfehler=message_operating
+1 Öffnen und Speichern von Dateien=message_saving
+1 Systemfehler=message_system
